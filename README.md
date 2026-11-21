@@ -14,7 +14,7 @@ Flake templates for ML/DS projects in Python on Nix/NixOS. Dependencies are mana
 
 ```bash
 mkdir my-project && cd my-project
-nix flake init -t github:nettzsu/ml-nix-templates#pytorch
+nix flake init -t github:nettzsu/nix-ml-templates#pytorch
 
 git init && git add -A
 nix run nixpkgs#uv -- lock        # create uv.lock (required by uv2nix)
@@ -22,7 +22,7 @@ git add uv.lock
 nix develop                       # or: direnv allow
 ```
 
-List the templates: `nix flake show github:nettzsu/ml-nix-templates`.
+List the templates: `nix flake show github:nettzsu/nix-ml-templates`.
 
 ## Renaming a project
 
